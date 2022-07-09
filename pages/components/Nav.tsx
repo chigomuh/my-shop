@@ -2,44 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import SearchBar from "./SearchBar";
-
-const NavTap = [
-  {
-    text: "All",
-    path: "/search",
-  },
-  {
-    text: "New Arrivals",
-    path: "/search/newArrivals",
-  },
-  {
-    text: "Featured",
-    path: "/search/featured",
-  },
-];
-
-const FooterTap = [
-  {
-    text: "Home",
-    path: "/",
-  },
-  {
-    text: "About",
-    path: "/about",
-  },
-  {
-    text: "Terms of use",
-    path: "/terms-of-use",
-  },
-  {
-    text: "Shipping",
-    path: "/shipping",
-  },
-  {
-    text: "Privacy Policy",
-    path: "/privacy-policy",
-  },
-];
+import { NavTap, FooterTap } from "../data/config";
 
 interface Props {
   cartCount?: number;
@@ -59,8 +22,8 @@ const Nav = ({ cartCount }: Props) => {
   };
 
   return (
-    <nav className="bg-white sticky z-40 top-0">
-      <div className="w-screen h-16 flex items-center justify-around">
+    <nav className="bg-white sticky z-40 top-0 border border-b-2">
+      <div className="w-screen h-16 flex items-center justify-between px-4">
         <div className="w-[45%] lg:w-[30%] items-center flex">
           <div className="hover:cursor-pointer">
             <Link href="/">
@@ -85,7 +48,7 @@ const Nav = ({ cartCount }: Props) => {
         <div className="w-[30%] hidden lg:flex max-w-2xl">
           <SearchBar />
         </div>
-        <div className="w-[45%] lg:w-[30%] flex items-center justify-end space-x-4">
+        <div className="w-[45%] lg:w-[30%] flex items-center justify-end space-x-4 pr-4">
           <div className="flex items-center relative hover:cursor-pointer">
             <Image
               src="/image/shoppingBag.svg"
@@ -126,7 +89,7 @@ const Nav = ({ cartCount }: Props) => {
           </div>
         </div>
       </div>
-      <div className="w-screen px-6 lg:hidden">
+      <div className="w-screen flex justify-center pl-4 pr-9 py-2 lg:hidden">
         <SearchBar />
       </div>
       {menuOpen && (

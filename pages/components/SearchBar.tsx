@@ -1,13 +1,13 @@
 const SearchBar = () => {
   return (
-    <form className="items-center w-full justify-center h-9 border border-gray-300 p-4 flex">
+    <form className="items-center w-full justify-center h-9 border border-gray-300 p-2 flex">
       <label className="hidden">searchBar</label>
       <input
         type="text"
         className="w-[95%] focus:outline-0"
         placeholder="Search for products..."
       />
-      <div className="flex justify-end">
+      <div className="flex justify-end hover:cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"

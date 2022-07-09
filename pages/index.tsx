@@ -1,7 +1,378 @@
 import type { NextPage } from "next";
+import Seo from "./components/Seo";
 
 const Home: NextPage = () => {
-  return <h1 className="text-3xl font-bold underline">안녕하세요</h1>;
+  return (
+    <>
+      <Seo title="Home" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>{" "}
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        dignissimos provident, modi nostrum, fuga libero, aut unde aspernatur
+        magni ab itaque soluta saepe atque labore ullam alias aliquid
+        voluptatibus laudantium?
+      </p>
+    </>
+  );
 };
 
 export default Home;

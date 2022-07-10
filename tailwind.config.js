@@ -5,7 +5,21 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        slider: {
+          "0%": {
+            transform: "translateX(0%)",
+          },
+          "100%": {
+            transform: "translateX(-50%)",
+          },
+        },
+      },
+      animation: {
+        slider: "slider 60s linear infinite",
+      },
+    },
   },
   plugins: [],
 };

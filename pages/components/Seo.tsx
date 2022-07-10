@@ -6,9 +6,10 @@ interface Seo {
 }
 
 const Seo = ({ title, description }: Seo) => {
+  const seoTitle = `${title} | 666666 Shop`;
   return (
     <Head>
-      <title>{title} | 666666 Shop</title>
+      <title>{seoTitle}</title>
       <meta
         name="description"
         content={description || "다양한 브랜드의 상품을 경험시켜드립니다."}

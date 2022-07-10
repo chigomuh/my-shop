@@ -36,35 +36,50 @@ const Home: NextPage<Props> = ({ product }) => {
       <div className="overflow-x-hidden">
         <div className="lg:flex">
           <div className="relative lg:w-2/3">
-            <ProductCard
-              id={product[0].id}
-              name={product[0].name}
-              price={product[0].price}
-              image_url={product[0].image_url[0]}
-              bg_color="#7928ca"
-              priority={true}
-            />
+            <Link href={`/product/${product[0].id}`}>
+              <a>
+                <ProductCard
+                  name={product[0].name}
+                  price={product[0].price}
+                  image_url={product[0].image_url[0]}
+                  bg_color="#7928ca"
+                  priority={true}
+                  width={250}
+                  height={250}
+                />
+              </a>
+            </Link>
           </div>
           <div className="lg:w-1/3">
             <div className="relative">
-              <ProductCard
-                id={product[1].id}
-                name={product[1].name}
-                price={product[1].price}
-                image_url={product[1].image_url[0]}
-                bg_color="black"
-                priority={true}
-              />
+              <Link href={`/product/${product[1].id}`}>
+                <a>
+                  <ProductCard
+                    name={product[1].name}
+                    price={product[1].price}
+                    image_url={product[1].image_url[0]}
+                    bg_color="black"
+                    priority={true}
+                    width={250}
+                    height={250}
+                  />
+                </a>
+              </Link>
             </div>
             <div className="relative">
-              <ProductCard
-                id={product[2].id}
-                name={product[2].name}
-                price={product[2].price}
-                image_url={product[2].image_url[0]}
-                bg_color="#ff0080"
-                priority={true}
-              />
+              <Link href={`/product/${product[2].id}`}>
+                <a>
+                  <ProductCard
+                    name={product[2].name}
+                    price={product[2].price}
+                    image_url={product[2].image_url[0]}
+                    bg_color="#ff0080"
+                    priority={true}
+                    width={250}
+                    height={250}
+                  />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -98,35 +113,50 @@ const Home: NextPage<Props> = ({ product }) => {
         <div className="lg:flex">
           <div className="lg:w-1/3">
             <div className="relative">
-              <ProductCard
-                id={product[0].id}
-                name={product[0].name}
-                price={product[0].price}
-                image_url={product[0].image_url[0]}
-                bg_color="#7928ca"
-                priority={true}
-              />
+              <Link href={`/product/${product[0].id}`}>
+                <a>
+                  <ProductCard
+                    name={product[0].name}
+                    price={product[0].price}
+                    image_url={product[0].image_url[0]}
+                    bg_color="#7928ca"
+                    priority={true}
+                    width={250}
+                    height={250}
+                  />
+                </a>
+              </Link>
             </div>
             <div className="relative">
-              <ProductCard
-                id={product[2].id}
-                name={product[2].name}
-                price={product[2].price}
-                image_url={product[2].image_url[0]}
-                bg_color="#ff0080"
-                priority={true}
-              />
+              <Link href={`/product/${product[2].id}`}>
+                <a>
+                  <ProductCard
+                    name={product[2].name}
+                    price={product[2].price}
+                    image_url={product[2].image_url[0]}
+                    bg_color="#ff0080"
+                    priority={true}
+                    width={250}
+                    height={250}
+                  />
+                </a>
+              </Link>
             </div>
           </div>
           <div className="relative lg:w-2/3">
-            <ProductCard
-              id={product[1].id}
-              name={product[1].name}
-              price={product[1].price}
-              image_url={product[1].image_url[0]}
-              bg_color="black"
-              priority={true}
-            />
+            <Link href={`/product/${product[1].id}`}>
+              <a>
+                <ProductCard
+                  name={product[1].name}
+                  price={product[1].price}
+                  image_url={product[1].image_url[0]}
+                  bg_color="black"
+                  priority={true}
+                  width={250}
+                  height={250}
+                />
+              </a>
+            </Link>
           </div>
         </div>
         <Slider sliderProduct={bottomSliderProduct} bgColor="white" />

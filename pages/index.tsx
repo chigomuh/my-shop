@@ -13,8 +13,8 @@ export interface Product {
   price: number;
   image_url: string[];
   description: string;
-  sizes: string[];
-  color: string[];
+  sizes: string[] | null;
+  color: string[] | null;
   rating: string;
   reviews: number;
   care: string;
@@ -43,7 +43,6 @@ const Home: NextPage<Props> = ({ product }) => {
                   price={product[0].price}
                   image_url={product[0].image_url[0]}
                   bg_color="#7928ca"
-                  priority={true}
                   width={250}
                   height={250}
                 />
@@ -59,7 +58,6 @@ const Home: NextPage<Props> = ({ product }) => {
                     price={product[1].price}
                     image_url={product[1].image_url[0]}
                     bg_color="black"
-                    priority={true}
                     width={250}
                     height={250}
                   />
@@ -74,7 +72,6 @@ const Home: NextPage<Props> = ({ product }) => {
                     price={product[2].price}
                     image_url={product[2].image_url[0]}
                     bg_color="#ff0080"
-                    priority={true}
                     width={250}
                     height={250}
                   />
@@ -120,7 +117,6 @@ const Home: NextPage<Props> = ({ product }) => {
                     price={product[0].price}
                     image_url={product[0].image_url[0]}
                     bg_color="#7928ca"
-                    priority={true}
                     width={250}
                     height={250}
                   />
@@ -135,7 +131,6 @@ const Home: NextPage<Props> = ({ product }) => {
                     price={product[2].price}
                     image_url={product[2].image_url[0]}
                     bg_color="#ff0080"
-                    priority={true}
                     width={250}
                     height={250}
                   />
@@ -151,7 +146,6 @@ const Home: NextPage<Props> = ({ product }) => {
                   price={product[1].price}
                   image_url={product[1].image_url[0]}
                   bg_color="black"
-                  priority={true}
                   width={250}
                   height={250}
                 />

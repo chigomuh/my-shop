@@ -6,6 +6,11 @@ import DetailClickBar from "../components/DetailClickBar";
 import ProductCard from "../components/ProductCard";
 import data from "../db/data.json";
 import { Product } from "../index";
+import {
+  useCartReducerState,
+  useCartReducerDispatch,
+} from "../reducer/reducer";
+import Nav from "../components/Nav";
 
 interface Props {
   product: Product;
@@ -30,6 +35,9 @@ const DetailProduct = ({ product, related }: Props) => {
   const [mainImageIndex, setMainImageIndex] = useState<number>(0);
   const [currentColor, setCurrentColor] = useState<string>(initColor);
   const [currentSize, setCurrentSize] = useState<string>(initSize);
+
+  const state = useCartReducerState();
+  const dispatch = useCartReducerDispatch();
 
   const handleImage = (event: SyntheticEvent<HTMLDivElement>) => {
     const currentImageIndex = Number(event.currentTarget.id);
@@ -57,6 +65,60 @@ const DetailProduct = ({ product, related }: Props) => {
     setCurrentSize(event.currentTarget.value);
   };
 
+  const submitAddToCart = (event: SyntheticEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    let sizeValue: string = "";
+    let colorValue: string = "";
+
+    if (product.sizes) {
+      const sizeElement = document.getElementsByName("size");
+
+      sizeElement.forEach((radio) => {
+        if (radio instanceof HTMLInputElement) {
+          if (radio.checked) {
+            sizeValue = radio.value;
+          }
+        }
+      });
+
+      if (sizeValue === "") {
+        return alert("사이즈를 선택해주세요.");
+      }
+    }
+
+    if (product.color) {
+      const colorElement = document.getElementsByName("color");
+
+      colorElement.forEach((color) => {
+        if (color instanceof HTMLInputElement) {
+          if (color.checked) {
+            colorValue = color.value;
+          }
+        }
+      });
+
+      if (colorValue === "") {
+        return alert("색상을 선택해주세요.");
+      }
+    }
+
+    dispatch({
+      type: "add",
+      payload: {
+        product: {
+          id: product.id,
+          size: sizeValue,
+          color: colorValue,
+          name: product.name,
+          price: product.price,
+          imageUrl: product.image_url[0],
+          count: 1,
+        },
+      },
+    });
+  };
+
   return (
     <>
       <div className="w-screen lg:flex">
@@ -67,7 +129,6 @@ const DetailProduct = ({ product, related }: Props) => {
               price={product.price}
               image_url={product.image_url[mainImageIndex]}
               bg_color="#7928ca"
-              priority={true}
               width={600}
               height={600}
               layout={"intrinsic"}
@@ -118,7 +179,6 @@ const DetailProduct = ({ product, related }: Props) => {
                   alt="product-image"
                   width={250}
                   height={250}
-                  priority={true}
                 />
               </div>
             ))}
@@ -126,7 +186,7 @@ const DetailProduct = ({ product, related }: Props) => {
         </div>
         <div className="relative lg:w-1/3 bg-white p-6">
           <div>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={submitAddToCart}>
               <div className="text-[#777777]">SIZE</div>
               {product.sizes ? (
                 <div className="flex space-x-4">
@@ -138,6 +198,7 @@ const DetailProduct = ({ product, related }: Props) => {
                       >
                         <input
                           id={`size-checkbox${index}`}
+                          name="size"
                           value={size}
                           type="radio"
                           className="hidden peer"
@@ -171,6 +232,7 @@ const DetailProduct = ({ product, related }: Props) => {
                       >
                         <input
                           id={`color-checkbox${index}`}
+                          name="color"
                           value={color}
                           type="radio"
                           className="hidden peer"
@@ -248,7 +310,6 @@ const DetailProduct = ({ product, related }: Props) => {
                     width={250}
                     height={250}
                     layout="responsive"
-                    priority={true}
                   />
                 </a>
               </Link>

@@ -6,7 +6,6 @@ interface Props {
   price: number;
   image_url: string;
   bg_color: string;
-  priority?: boolean;
   width: number;
   height: number;
   layout?: "responsive" | "intrinsic";
@@ -17,7 +16,6 @@ const ProductCard = ({
   price,
   image_url,
   bg_color,
-  priority,
   width,
   height,
   layout = "responsive",
@@ -30,7 +28,6 @@ const ProductCard = ({
           alt={name}
           width={width}
           height={height}
-          priority={priority}
           layout={layout}
         />
       </div>

@@ -7,7 +7,7 @@ const Categories = () => {
   const router = useRouter();
   let filterData: Product[] = data.product;
 
-  if (router.query.categories === "new-arrivals") {
+  if (router.query.categories === "newArrivals") {
     filterData = data.product.slice(data.product.length - 5);
   } else if (router.query.categories === "featured") {
     filterData = data.product.slice(0, 2);

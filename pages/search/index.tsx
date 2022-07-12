@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import React from "react";
 import SearchMainContent from "../components/SearchMainContent";
 import data from "../db/data.json";

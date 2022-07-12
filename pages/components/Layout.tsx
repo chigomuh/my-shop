@@ -33,15 +33,17 @@ const Layout = ({ children }: PropsWithChildren) => {
       <CartStateContext.Provider value={state}>
         <CartDispatchContext.Provider value={dispatch}>
           <Nav />
-          <div className="flex min-h-screen w-screen justify-center">
-            <div className="lg:flex w-full max-w-7xl justify-center space-x-4 relative">
-              <SearchLeftNav uniqueDesigners={uniqueDesigners} />
-              <div className="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full h-max">
-                {children}
+          <main className="overflow-y-hidden">
+            <div className="flex min-h-screen w-screen justify-center">
+              <div className="lg:flex w-full max-w-7xl justify-center lg:space-x-4 relative">
+                <SearchLeftNav uniqueDesigners={uniqueDesigners} />
+                <div className="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full h-max">
+                  {children}
+                </div>
+                <SearchRightNav />
               </div>
-              <SearchRightNav />
             </div>
-          </div>
+          </main>
           <Footer />
         </CartDispatchContext.Provider>
       </CartStateContext.Provider>

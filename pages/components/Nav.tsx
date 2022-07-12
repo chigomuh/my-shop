@@ -151,7 +151,10 @@ const Nav = () => {
             <div className="px-10">
               {NavTap.map((tap) => (
                 <Link key={tap.text} href={tap.path}>
-                  <a className="flex justify-center m-10 text-xl border-b-2">
+                  <a
+                    className="flex justify-center m-10 text-xl border-b-2"
+                    onClick={handleMenuTap}
+                  >
                     {tap.text}
                   </a>
                 </Link>

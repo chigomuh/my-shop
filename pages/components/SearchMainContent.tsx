@@ -12,7 +12,7 @@ const SearchMainContent = ({ products }: Props) => {
     <>
       {products.map((product) => (
         <React.Fragment key={product.id}>
-          <div className="text-xl flex justify-center items-center p-4">
+          <div className="text-xl flex justify-center items-center lg:p-4">
             <Link href={`/product/${product.id}`}>
               <a className="relative hover:scale-105 duration-300 transition-all w-full h-max">
                 <ProductCard

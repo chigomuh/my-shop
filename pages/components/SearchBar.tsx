@@ -1,11 +1,29 @@
+import { useRouter } from "next/router";
+import { SyntheticEvent, useRef } from "react";
+
 const SearchBar = () => {
+  const router = useRouter();
+  const searchProduct = useRef<HTMLInputElement>(null);
+
+  const submitSearch = (event: SyntheticEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (searchProduct.current instanceof HTMLInputElement) {
+      router.push(`/search/product/${searchProduct.current.value}`);
+      searchProduct.current.value = "";
+    }
+  };
+
   return (
-    <form className="items-center w-full justify-center h-9 border border-gray-300 p-2 flex">
+    <form
+      className="items-center w-full justify-center h-9 border border-gray-300 p-2 flex"
+      onSubmit={submitSearch}
+    >
       <label className="hidden">searchBar</label>
       <input
         type="text"
         className="w-[95%] focus:outline-0"
         placeholder="Search for products..."
+        ref={searchProduct}
       />
       <div className="flex justify-end hover:cursor-pointer">
         <svg

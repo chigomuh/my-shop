@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Product } from "../index";
+import { Product } from "../pages/index";
 
 interface Props {
   sliderProduct: Product[];

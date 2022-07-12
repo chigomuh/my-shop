@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { Product } from "..";
-import SearchMainContent from "../components/SearchMainContent";
-import data from "../db/data.json";
+import SearchMainContent from "../../components/SearchMainContent";
+import data from "../../db/data.json";
 
 const Categories = () => {
   const router = useRouter();

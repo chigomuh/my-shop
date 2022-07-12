@@ -1,8 +1,8 @@
 import type { GetStaticProps, NextPage } from "next";
-import Seo from "./components/Seo";
-import ProductCard from "./components/ProductCard";
-import data from "./db/data.json";
-import Slider from "./components/Slider";
+import Seo from "../components/Seo";
+import ProductCard from "../components/ProductCard";
+import data from "../db/data.json";
+import Slider from "../components/Slider";
 import Image from "next/image";
 import Link from "next/link";
 

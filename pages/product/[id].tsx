@@ -2,15 +2,11 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React, { SyntheticEvent, useState } from "react";
-import DetailClickBar from "../components/DetailClickBar";
-import ProductCard from "../components/ProductCard";
-import data from "../db/data.json";
+import DetailClickBar from "../../components/DetailClickBar";
+import ProductCard from "../../components/ProductCard";
+import data from "../../db/data.json";
 import { Product } from "../index";
-import {
-  useCartReducerState,
-  useCartReducerDispatch,
-} from "../reducer/reducer";
-import Nav from "../components/Nav";
+import { useCartReducerDispatch } from "../../reducer/reducer";
 
 interface Props {
   product: Product;
@@ -36,7 +32,6 @@ const DetailProduct = ({ product, related }: Props) => {
   const [currentColor, setCurrentColor] = useState<string>(initColor);
   const [currentSize, setCurrentSize] = useState<string>(initSize);
 
-  const state = useCartReducerState();
   const dispatch = useCartReducerDispatch();
 
   const handleImage = (event: SyntheticEvent<HTMLDivElement>) => {

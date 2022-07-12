@@ -1,7 +1,7 @@
 import ProductCard from "./ProductCard";
 import Link from "next/link";
 import React from "react";
-import { Product } from "..";
+import { Product } from "../pages/index";
 
 interface Props {
   products: Product[];

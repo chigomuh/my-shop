@@ -1,21 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SearchBar from "./SearchBar";
 import { NavTap, FooterTap } from "../data/config";
 import {
   useCartReducerState,
   useCartReducerDispatch,
+  Product,
 } from "../reducer/reducer";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [cartOpen, setCartOpen] = useState<boolean>(false);
-  const [count, setCount] = useState<number>(0);
   const state = useCartReducerState();
   const dispatch = useCartReducerDispatch();
 
-  console.log(state.totalPrice);
   const cartCount = state.cartProduct.length;
 
   const handleMenuTap = () => {
@@ -38,8 +37,31 @@ const Nav = () => {
     }
   };
 
-  const handleRender = () => {
-    setCount(count + 1);
+  const increaseProduct = (product: Product) => {
+    dispatch({
+      type: "add",
+      payload: {
+        product,
+      },
+    });
+  };
+
+  const decreaseProduct = (product: Product) => {
+    dispatch({
+      type: "decrease",
+      payload: {
+        product,
+      },
+    });
+  };
+
+  const removeProduct = (product: Product) => {
+    dispatch({
+      type: "remove",
+      payload: {
+        product,
+      },
+    });
   };
 
   return (
@@ -246,7 +268,11 @@ const Nav = () => {
                       </div>
                     </div>
                     <div className="flex items-center justify-between">
-                      <div className="border flex items-center cursor-pointer">
+                      {/* 상품 삭제 기능 */}
+                      <div
+                        className="border flex items-center cursor-pointer"
+                        onClick={() => removeProduct(product)}
+                      >
                         <Image
                           src="/image/exit.svg"
                           alt="remove"
@@ -258,7 +284,12 @@ const Nav = () => {
                         <div className="w-full pl-4 text-lg cursor-text">
                           {product.count}
                         </div>
-                        <div className="border-l-[1px] border-r-[1px] flex items-center cursor-pointer">
+
+                        {/* 수량 감소 기능 */}
+                        <div
+                          className="border-l-[1px] border-r-[1px] flex items-center cursor-pointer"
+                          onClick={() => decreaseProduct(product)}
+                        >
                           <Image
                             src="/image/minus.svg"
                             alt="minus"
@@ -266,7 +297,12 @@ const Nav = () => {
                             height={28}
                           />
                         </div>
-                        <div className="flex items-center cursor-pointer">
+
+                        {/* 수량 증가 기능 */}
+                        <div
+                          className="flex items-center cursor-pointer"
+                          onClick={() => increaseProduct(product)}
+                        >
                           <Image
                             src="/image/plus.svg"
                             alt="minus"
@@ -302,7 +338,7 @@ const Nav = () => {
                   </div>
                 </div>
                 <div className="w-full h-16 text-white font-bold flex items-center justify-center">
-                  <div className="bg-black w-[90%] h-full flex items-center justify-center">
+                  <div className="bg-black w-[90%] h-full flex items-center justify-center cursor-pointer">
                     PROCEED TO CHECKOUT
                   </div>
                 </div>

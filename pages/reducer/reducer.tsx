@@ -47,43 +47,79 @@ const actionCommand: CartActionCommand = {
   DECREASE: "decrease",
 };
 
+const handleCartProductCount = (
+  cartProduct: Product[],
+  targetProduct: Product,
+  type: "increase" | "decrease" | "remove"
+) => {
+  const addExist = cartProduct.findIndex((product) => {
+    if (
+      product.id === targetProduct.id &&
+      product.color === targetProduct.color &&
+      product.size === targetProduct.size
+    ) {
+      return true;
+    }
+  });
+
+  if (addExist !== -1) {
+    const cloneCarProduct = [...cartProduct];
+
+    if (type === "increase") {
+      cloneCarProduct[addExist].count += 1;
+    } else if (type === "decrease") {
+      if (cloneCarProduct[addExist].count > 1) {
+        cloneCarProduct[addExist].count -= 1;
+      }
+    } else if (type === "remove") {
+      cloneCarProduct.splice(addExist, 1);
+      console.log(cloneCarProduct);
+    }
+
+    let totalPrice: number = 0;
+    cloneCarProduct.forEach((product) => {
+      totalPrice += product.price * product.count;
+    });
+
+    return {
+      cartProduct: [...cloneCarProduct],
+      totalPrice: totalPrice,
+    };
+  }
+
+  let totalPrice: number = 0;
+  cartProduct.forEach((product) => {
+    totalPrice += product.price * product.count;
+  });
+
+  return {
+    cartProduct: [...cartProduct, targetProduct],
+    totalPrice: totalPrice,
+  };
+};
+
 const reducer = (state: CartState, action: CartAction): CartState => {
   switch (action.type) {
     case actionCommand.ADD:
-      const addExist = state.cartProduct.findIndex((product) => {
-        if (
-          product.id === action.payload.product.id &&
-          product.color === action.payload.product.color &&
-          product.size === action.payload.product.size
-        ) {
-          return true;
-        }
-      });
+      return handleCartProductCount(
+        state.cartProduct,
+        action.payload.product,
+        "increase"
+      );
 
-      if (addExist !== -1) {
-        const cloneCarProduct = [...state.cartProduct];
-        cloneCarProduct[addExist].count += 1;
+    case actionCommand.DECREASE:
+      return handleCartProductCount(
+        state.cartProduct,
+        action.payload.product,
+        "decrease"
+      );
 
-        let totalPrice: number = 0;
-        cloneCarProduct.forEach((product) => {
-          totalPrice += product.price * product.count;
-        });
-
-        return {
-          cartProduct: [...cloneCarProduct],
-          totalPrice: totalPrice,
-        };
-      }
-
-      let totalPrice: number = 0;
-      state.cartProduct.forEach((product) => {
-        totalPrice += product.price * product.count;
-      });
-
-      return {
-        cartProduct: [...state.cartProduct, action.payload.product],
-        totalPrice: totalPrice,
-      };
+    case actionCommand.REMOVE:
+      return handleCartProductCount(
+        state.cartProduct,
+        action.payload.product,
+        "remove"
+      );
 
     default:
       throw new Error();

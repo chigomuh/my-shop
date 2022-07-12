@@ -65,8 +65,8 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-white sticky z-40 top-0 border border-b-2">
-      <div className="w-screen h-16 flex items-center justify-between px-4">
+    <nav className="bg-white sticky z-40 top-0 border border-b-2 lg:flex justify-center">
+      <div className="w-full h-16 flex items-center justify-between px-4 max-w-7xl">
         <div className="w-[45%] lg:w-[30%] items-center flex">
           <div className="hover:cursor-pointer">
             <Link href="/">
@@ -91,7 +91,7 @@ const Nav = () => {
         <div className="w-[30%] hidden lg:flex max-w-2xl">
           <SearchBar />
         </div>
-        <div className="w-[45%] lg:w-[30%] flex items-center justify-end space-x-4 pr-4">
+        <div className="w-[45%] lg:w-[30%] flex items-center justify-end space-x-4">
           <div
             className="flex items-center relative hover:cursor-pointer"
             onClick={handleCartTap}

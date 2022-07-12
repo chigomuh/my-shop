@@ -37,7 +37,7 @@ const Home: NextPage<Props> = ({ product }) => {
         <div className="lg:flex">
           <div className="relative lg:w-2/3">
             <Link href={`/product/${product[0].id}`}>
-              <a>
+              <a className="text-2xl lg:text-4xl">
                 <ProductCard
                   name={product[0].name}
                   price={product[0].price}
@@ -52,7 +52,7 @@ const Home: NextPage<Props> = ({ product }) => {
           <div className="lg:w-1/3">
             <div className="relative">
               <Link href={`/product/${product[1].id}`}>
-                <a>
+                <a className="text-2xl lg:text-4xl">
                   <ProductCard
                     name={product[1].name}
                     price={product[1].price}
@@ -66,7 +66,7 @@ const Home: NextPage<Props> = ({ product }) => {
             </div>
             <div className="relative">
               <Link href={`/product/${product[2].id}`}>
-                <a>
+                <a className="text-2xl lg:text-4xl">
                   <ProductCard
                     name={product[2].name}
                     price={product[2].price}
@@ -81,7 +81,7 @@ const Home: NextPage<Props> = ({ product }) => {
           </div>
         </div>
         <Slider sliderProduct={topSliderProduct} bgColor="black" />
-        <div className="bg-black text-white w-screen h-[324px] lg:h-[486px] border-t-2 border-b-2 flex items-center">
+        <div className="bg-black text-white w-screen lg:h-[486px] border-t-2 border-b-2 flex items-center h-full">
           <div className="lg:flex space-x-4 px-4 space-y-4 lg:space-y-0">
             <div className="font-bold text-4xl lg:text-5xl lg:w-60 lg:text-end px-4">
               Dessert dragée halvah croissant.
@@ -111,7 +111,7 @@ const Home: NextPage<Props> = ({ product }) => {
           <div className="lg:w-1/3">
             <div className="relative">
               <Link href={`/product/${product[0].id}`}>
-                <a>
+                <a className="text-2xl lg:text-4xl">
                   <ProductCard
                     name={product[0].name}
                     price={product[0].price}
@@ -125,7 +125,7 @@ const Home: NextPage<Props> = ({ product }) => {
             </div>
             <div className="relative">
               <Link href={`/product/${product[2].id}`}>
-                <a>
+                <a className="text-2xl lg:text-4xl">
                   <ProductCard
                     name={product[2].name}
                     price={product[2].price}
@@ -140,7 +140,7 @@ const Home: NextPage<Props> = ({ product }) => {
           </div>
           <div className="relative lg:w-2/3">
             <Link href={`/product/${product[1].id}`}>
-              <a>
+              <a className="text-2xl lg:text-4xl">
                 <ProductCard
                   name={product[1].name}
                   price={product[1].price}

@@ -123,7 +123,7 @@ const DetailProduct = ({ product, related }: Props) => {
     <>
       <div className="w-screen lg:flex">
         <div className="relative lg:w-2/3 h-max">
-          <div className="relative w-full max-h-[782px] flex justify-center bg-[#7928ca]">
+          <div className="relative w-full max-h-[782px] flex justify-center bg-[#7928ca] text-2xl lg:text-4xl">
             <ProductCard
               name={product.name}
               price={product.price}

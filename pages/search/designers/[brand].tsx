@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import SearchMainContent from "../../../components/SearchMainContent";
+import Seo from "../../../components/Seo";
 import data from "../../../db/data.json";
 
 const Brand = () => {
@@ -8,7 +9,15 @@ const Brand = () => {
     (product) => product.brand === router.query.brand
   );
 
-  return <SearchMainContent products={filterData} />;
+  const title: string =
+    typeof router.query.brand === "string" ? router.query.brand : "";
+
+  return (
+    <>
+      <Seo title={title} />
+      <SearchMainContent products={filterData} />
+    </>
+  );
 };
 
 export default Brand;

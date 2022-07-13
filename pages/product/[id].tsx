@@ -7,6 +7,7 @@ import ProductCard from "../../components/ProductCard";
 import data from "../../db/data.json";
 import { Product } from "../index";
 import { useCartReducerDispatch } from "../../reducer/reducer";
+import Seo from "../../components/Seo";
 
 interface Props {
   product: Product;
@@ -116,6 +117,7 @@ const DetailProduct = ({ product, related }: Props) => {
 
   return (
     <>
+      <Seo title={product.name} />
       <div className="w-screen lg:flex">
         <div className="relative lg:w-2/3 h-max">
           <div className="relative w-full max-h-[782px] flex justify-center bg-[#7928ca] text-2xl lg:text-4xl">

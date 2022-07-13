@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { Product } from "..";
 import SearchMainContent from "../../components/SearchMainContent";
+import Seo from "../../components/Seo";
 import data from "../../db/data.json";
 
 const Categories = () => {
@@ -13,7 +14,17 @@ const Categories = () => {
     filterData = data.product.slice(0, 2);
   }
 
-  return <SearchMainContent products={filterData} />;
+  const title: string =
+    typeof router.query.categories === "string"
+      ? router.query.categories
+      : "Categories";
+
+  return (
+    <>
+      <Seo title={title} />
+      <SearchMainContent products={filterData} />
+    </>
+  );
 };
 
 export default Categories;

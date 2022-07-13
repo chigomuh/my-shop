@@ -73,7 +73,6 @@ const handleCartProductCount = (
       }
     } else if (type === "remove") {
       cloneCarProduct.splice(addExist, 1);
-      console.log(cloneCarProduct);
     }
 
     let totalPrice: number = 0;

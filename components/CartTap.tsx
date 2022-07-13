@@ -142,7 +142,6 @@ const CartTap = ({ handleCartTap, handleLoginTap }: Props) => {
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
-                  {/* 상품 삭제 기능 */}
                   <div
                     className="border flex items-center cursor-pointer"
                     onClick={() => removeProduct(product)}
@@ -158,8 +157,6 @@ const CartTap = ({ handleCartTap, handleLoginTap }: Props) => {
                     <div className="w-full pl-4 text-lg cursor-text">
                       {product.count}
                     </div>
-
-                    {/* 수량 감소 기능 */}
                     <div
                       className="border-l-[1px] border-r-[1px] flex items-center cursor-pointer"
                       onClick={() => decreaseProduct(product)}
@@ -171,8 +168,6 @@ const CartTap = ({ handleCartTap, handleLoginTap }: Props) => {
                         height={28}
                       />
                     </div>
-
-                    {/* 수량 증가 기능 */}
                     <div
                       className="flex items-center cursor-pointer"
                       onClick={() => increaseProduct(product)}
@@ -189,7 +184,6 @@ const CartTap = ({ handleCartTap, handleLoginTap }: Props) => {
               </div>
             </React.Fragment>
           ))}
-          {/* 여기는 결제 부분 */}
           <div className="sticky bottom-0 bg-white left-0 w-full h-64 border-t-[1px]">
             <div className="pt-6 pb-4 px-4 text-sm border-b-[1px] mb-4 space-y-2">
               <div className="flex justify-between items-center">

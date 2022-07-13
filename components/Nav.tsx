@@ -21,7 +21,10 @@ const Nav = () => {
     setMenuOpen(!menuOpen);
 
     if (!menuOpen) {
-      document.body.setAttribute("style", "overflow: hidden;");
+      document.body.setAttribute(
+        "style",
+        "overflow: hidden; padding-right: 16px;"
+      );
     } else {
       document.body.setAttribute("style", "");
     }
@@ -31,7 +34,10 @@ const Nav = () => {
     setCartOpen(!cartOpen);
 
     if (!cartOpen) {
-      document.body.setAttribute("style", "overflow: hidden;");
+      document.body.setAttribute(
+        "style",
+        "overflow: hidden; padding-right: 16px;"
+      );
     } else {
       document.body.setAttribute("style", "");
     }
@@ -44,7 +50,10 @@ const Nav = () => {
     setLoginOpen(!loginOpen);
 
     if (!loginOpen) {
-      document.body.setAttribute("style", "overflow: hidden;");
+      document.body.setAttribute(
+        "style",
+        "overflow: hidden; padding-right: 16px;"
+      );
     } else {
       document.body.setAttribute("style", "");
     }
@@ -57,7 +66,10 @@ const Nav = () => {
     setSignUpOpen(!signUpOpen);
 
     if (!signUpOpen) {
-      document.body.setAttribute("style", "overflow: hidden;");
+      document.body.setAttribute(
+        "style",
+        "overflow: hidden; padding-right: 16px;"
+      );
     } else {
       document.body.setAttribute("style", "");
     }

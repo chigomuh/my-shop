@@ -32,7 +32,7 @@ const ProductCard = ({
       <div className="absolute top-0 left-0 z-10 flex flex-col justify-center text-center">
         <div className="bg-white font-bold p-4">{name}</div>
         <div className="bg-white text-base w-28 p-2">
-          {price.toLocaleString("ko-KR")} \
+          {price.toLocaleString("ko-KR")} ₩
         </div>
       </div>
     </div>
